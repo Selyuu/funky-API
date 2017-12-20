@@ -1,0 +1,29 @@
+{
+  "name": "funkyapi",
+  "version": "1.0.0",
+  "description": "Funky API data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Selyuu/funky-API.git"
+  },
+  "author": "Rainier Louis",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.9",
+    "mongoose": "^4.6.0",
+    "node-restful": "^0.2.5",
+    "types": "^0.1.1",
+    "typings": "^2.1.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Selyuu/funky-API"
+  },
+  "homepage": "https://github.com/Selyuu/funky-API"
+}
