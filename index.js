@@ -5,6 +5,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var Quote = require("./entities/codes");
 var mongoose = require("mongoose");
+var cors = require("cors");
 var restful = require('node-restful');
 // ===============
 // COMMON VARIABLES
@@ -15,6 +16,7 @@ var connectionString = "mongodb://heroku_wk7zz0k5:2fgj4rr1flbc8cqu94b38g85lc@ds1
 // Express App
 // ===============
 var app = express();
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true

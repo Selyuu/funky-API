@@ -3,6 +3,7 @@ import * as express from "express";
 import * as bodyParser from "body-parser";  
 import * as Quote from "./entities/codes";  
 import * as mongoose from "mongoose";
+import * as cors from "cors";
 
 const restful = require('node-restful'); 
 
@@ -15,7 +16,8 @@ let connectionString: string = `mongodb://heroku_wk7zz0k5:2fgj4rr1flbc8cqu94b38g
 // ===============
 // Express App
 // ===============
-const app = express();  
+const app = express(); 
+app.use(cors()); 
 app.use(bodyParser.json());  
 app.use(bodyParser.urlencoded({  
     extended: true
